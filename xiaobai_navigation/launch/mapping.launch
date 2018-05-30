@@ -12,7 +12,8 @@
             args="_ip_address:=192.168.0.10 _angle_max:=0.8 _angle_min:=-0.8" />
 
     <!-- mapping -->
-    <node pkg="hector_mapping" type="hector_mapping" name="hector_mapping" />
+    <!-- <node pkg="hector_mapping" type="hector_mapping" name="hector_mapping" /> -->
+    <node pkg="gmapping" type="slam_gmapping" name="slam_gmapping" />
 
     <!-- move_base -->
     <include file="$(find xiaobai_navigation)/launch/move_base.launch" />
