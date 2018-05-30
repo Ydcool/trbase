@@ -12,8 +12,8 @@
             args="_ip_address:=192.168.0.10 _angle_max:=0.8 _angle_min:=-0.8" />
 
     <!-- map_server -->
-    <node pkg="map_server" type="map_server" name="map_server"
-          args="$(find xiaobai_navigation)/maps/map.yaml" />
+    <!-- <node pkg="map_server" type="map_server" name="map_server"
+          args="$(find xiaobai_navigation)/maps/map.yaml" /> -->
 
     <!-- amcl localization -->
     <node pkg="amcl" type="amcl" name="amcl" />

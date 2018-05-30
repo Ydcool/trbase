@@ -10,8 +10,8 @@
     <include file="$(find ls01d)/launch/ls01d.launch" />
 
     <!-- map_server -->
-    <node pkg="map_server" type="map_server" name="map_server"
-          args="$(find abel10_navigation)/maps/map.yaml" />
+    <!-- <node pkg="map_server" type="map_server" name="map_server"
+          args="$(find abel10_navigation)/maps/map.yaml" /> -->
 
     <!-- amcl localization -->
     <node pkg="amcl" type="amcl" name="amcl" />
